@@ -4,10 +4,113 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Tables and Forms</title>
+    <style>
+      table, th, td {
+        border: 1px solid  rgb(176, 176, 176);
+        padding: 10px;
+        border-collapse: collapse;
+      }
+
+      td {
+        text-align: center;
+      }
+
+      
+      button {
+        background-color: #4CAF50; 
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-weight: 600; 
+        font-size: 16px;  
+        transition-duration: 0.4s;
+        border-radius: 3%;
+      }
+      
+      button:hover {
+          background-color: #256827;
+          color:  white;
+          cursor: pointer;
+        }
+    </style>
   </head>
+  
   <body>
     <main>
       <!-- Complete the Exercises HERE -->
+      <table>
+        <thead>
+          <tr>
+            <th>total servings</th>
+            <th>serving size</th>
+            <th>calories per serving</th>
+            <th>carbs per serving</th>
+            <th>sugars per serving</th>
+            <th>sodium per serving</th>
+          </tr>
+        </thead>
+        <tr>
+          <td>1 can</td>
+          <td>12 fl oz</td>
+          <td>140</td>
+          <td>39 g</td>
+          <td>39 g</td>
+          <td>45mg</td>
+        </tr>
+        <tr>
+          <td>1 can</td>
+          <td>12 fl oz</td>
+          <td>150</td>
+          <td>41 g</td>
+          <td>41 g</td>
+          <td>30mg</td>
+        </tr>
+        <tr>
+          <td>1 can</td>
+          <td>12 fl oz</td>
+          <td>0</td>
+          <td>0 g</td>
+          <td>0 g</td>
+          <td>40mg</td>
+        </tr>
+        <tr>
+          <td>1 can</td>
+          <td>12 fl oz</td>
+          <td>150</td>
+          <td>40 mg</td>
+          <td>40 g</td>
+          <td>55 mg</td>
+        </tr>
+        <tr>
+          <td>1 can</td>
+          <td>12 fl oz</td>
+          <td>170</td>
+          <td>46 mg</td>
+          <td>46 g</td>
+          <td>60 mg</td>
+        </tr>
+      </table>
+      <br>
+      <form action="">
+        <label for="t-serving">Total Servings</label>
+        <input type="text" id="t-serving" name="t-serving"><br><br>
+        <label for="s-size">Serving Size</label>
+        <input type="text" id="s-size" name="s-size"><br><br>
+        <label for="cal-serving">Calories Per Serving</label>
+        <input type="text" id="cal-serving" name="cal-serving"><br><br>
+        <label for="carb-serving">Carbs Per Serving</label>
+        <input type="text" id="carb-serving" name="carb-serving"><br><br>
+        <label for="sug-serving">Sugars Per Serving</label>
+        <input type="text" id="sug-serving" name="sug-serving"><br><br>
+        <label for="sod-serving">Sodium Per Serving</label>
+        <input type="text" id="sod-serving" name="sod-serving"><br><br>
+        <button type="submit">Submit</button>
+      </form>
     </main>
   </body>
 </html>
+
+
